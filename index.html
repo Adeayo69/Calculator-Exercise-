@@ -7,10 +7,42 @@
 
 
     <script>
-        
+        result.value = r;
+
+        function sub() {
+            let value1 = v1.value;
+            let value2 = v2.value;
+            let r = value1 - value2;
+            result.value = r
+        }
+        function add() {
+            let value1 = Number (v1.value);
+            let value2 = Number(v2.value);
+            let r = value1 + value2;
+            result.value = r
+        }
+        function div() {
+            let value1 = v1.value;
+            let value2 = v2.value;
+            let r = value1 / value2;
+            result.value = r
+        }
+        function mul() {
+            let value1 = v1.value;
+            let value2 = v2.value;
+            let r = value1 * value2;
+            result.value = r
+        }
     </script>
 </head>
 <body>
-    
+    Value 1: <input type="text" id="v1"><br><br>
+    Value 2: <input type="text" id="v2"><br><br>
+
+    Result: <input type="text" id="result">
+    <button onclick="sub()">-</button>
+    <button onclick="add()">+</button>
+    <button onclick="div()">/</button>
+    <button onclick="mul()">*</button>
 </body>
 </html>
